@@ -196,10 +196,10 @@ f.write("M2 net3 inp  net2 vss cmosn L="+str(L2)+"u W="+str(W2)+"u\n")
 f.write("M3 net1 net1 vdd  vdd cmosp L="+str(L3)+"u W="+str(W3)+"u\n")
 f.write("M4 net3 net1 vdd  vdd cmosp L="+str(L4)+"u W="+str(W4)+"u\n")
 f.write("M5 net2 vb   vss  vss cmosn L="+str(L5)+"u W="+str(W5)+"u\n")
-f.write("M6 vout vb   vss  vdd cmosp L="+str(L6)+"u W="+str(W6)+"u\n")
-f.write("M7 vout vb   vss  vss cmosn L="+str(L7)+"u W="+str(W7)+"u\n")
-f.write("C1 vdd  vb "+str(Cc_p)+"p\n\n")
-f.write("R1 vdd  vb "+str(R1)+"\n")
+f.write("M6 out  vb   vss  vdd cmosp L="+str(L6)+"u W="+str(W6)+"u\n")
+f.write("M7 out  vb   vss  vss cmosn L="+str(L7)+"u W="+str(W7)+"u\n")
+f.write("C1 net3 out "+str(Cc_p)+"p\n\n")
+f.write("R1 vdd  vb "+str(R1)+"k\n")
 f.write("M8 vb   vb   vss  vss cmosn L="+str(L8)+"u W="+str(W8)+"u\n\n")
 f.write(".ends opamp\n")
 
@@ -211,3 +211,5 @@ exit=0
 while exit==0:
     print("終了したい場合は何かキーを押してください。")
     exit = input()
+
+
