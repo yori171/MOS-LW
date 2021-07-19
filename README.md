@@ -8,5 +8,5 @@
 使用する際は、「CMOSアナログ回路入門」を片手にプログラムを走らせることをお勧めする。
 
 
-MOScalc.py　　　は　MOSのLW比を計算し表示するだけ
-MOScalcNET.py　 は　MOSのLW比を計算しNETリストを生成しアウトプット
+MOScalc.py：MOSのLW比を計算し表示するだけ
+MOScalcNET.py：MOSのLW比を計算しNETリストを生成しアウトプット
