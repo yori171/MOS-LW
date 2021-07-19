@@ -190,17 +190,17 @@ f=open('./'+x+'.net','w')
 
 f.write("opamp_netlist\n\n")
 f.write(".param psvoltage="+str(Vdd)+"\n\n")
-f.write(".subkt opamp inm inp out vdd vss\n\n")
-f.write("M1 net1 vinm net2 vss cmosn L="+str(L1)+" W="+str(W1)+"\n")
-f.write("M2 net3 vinp net2 vss cmosn L="+str(L2)+" W="+str(W2)+"\n")
-f.write("M3 net1 net1 vdd  vdd cmosp L="+str(L3)+" W="+str(W3)+"\n")
-f.write("M4 net3 net1 vdd  vdd cmosp L="+str(L4)+" W="+str(W4)+"\n")
-f.write("M5 net2 vb   vss  vss cmosn L="+str(L5)+" W="+str(W5)+"\n")
-f.write("M6 vout vb   vss  vdd cmosp L="+str(L6)+" W="+str(W6)+"\n")
-f.write("M7 vout vb   vss  vss cmosn L="+str(L7)+" W="+str(W7)+"\n")
+f.write(".subckt opamp inm inp out vdd vss\n\n")
+f.write("M1 net1 inm  net2 vss cmosn L="+str(L1)+"u W="+str(W1)+"u\n")
+f.write("M2 net3 inp  net2 vss cmosn L="+str(L2)+"u W="+str(W2)+"u\n")
+f.write("M3 net1 net1 vdd  vdd cmosp L="+str(L3)+"u W="+str(W3)+"u\n")
+f.write("M4 net3 net1 vdd  vdd cmosp L="+str(L4)+"u W="+str(W4)+"u\n")
+f.write("M5 net2 vb   vss  vss cmosn L="+str(L5)+"u W="+str(W5)+"u\n")
+f.write("M6 vout vb   vss  vdd cmosp L="+str(L6)+"u W="+str(W6)+"u\n")
+f.write("M7 vout vb   vss  vss cmosn L="+str(L7)+"u W="+str(W7)+"u\n")
 f.write("C1 vdd  vb "+str(Cc_p)+"p\n\n")
 f.write("R1 vdd  vb "+str(R1)+"\n")
-f.write("M8 vb   vb   vss  vss cmosn L="+str(L8)+" W="+str(W8)+"\n\n")
+f.write("M8 vb   vb   vss  vss cmosn L="+str(L8)+"u W="+str(W8)+"u\n\n")
 f.write(".ends opamp\n")
 
 f.close()
@@ -211,5 +211,3 @@ exit=0
 while exit==0:
     print("終了したい場合は何かキーを押してください。")
     exit = input()
-
-
