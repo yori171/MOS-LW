@@ -197,7 +197,7 @@ print(x,".net　というファイルを作成します。")
 f=open('./'+x+'.net','w')
 
 f.write("opamp_netlist\n\n")
-f.write(".param psvoltage="+str(Vdd)+"\n\n")
+f.write(".param psvoltage="+str(Vdd*2)+"\n\n")
 f.write(".subckt opamp inm inp out vdd vss\n\n")
 f.write("M1 net1 inm  net2 vss cmosn L="+str(L1)+"u W="+str(W1)+"u\n")
 f.write("M2 net3 inp  net2 vss cmosn L="+str(L2)+"u W="+str(W2)+"u\n")
