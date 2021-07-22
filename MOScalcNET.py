@@ -50,27 +50,33 @@ L=float(input())
 
 print("=====================================================")
 
-print("基準値Lに対してL=Wの時の")
+print("Wの基準値を入力してください")
+print("単位は[u]です。")
+W=float(input())
+
+print("=====================================================")
+
+print("基準値L,Wに対して")
 print("nmosの閾値　Vtn　の値を入力してください")
 print("単位は[V]です。")
 Vtn=float(input())
 
 print("=====================================================")
 
-print("基準値Lに対してL=Wの時の")
+print("基準値L,Wに対して")
 print("pmosの閾値　Vtp　の値を入力してください")
 print("単位は[V]です。")
 Vtp=float(input())
 
 print("=====================================================")
 
-print("基準値Lに対してL=Wの時の")
+print("基準値L,Wに対して")
 print("BetaN の値を入力してください")
 BetaN=float(input())
 
 print("=====================================================")
 
-print("基準値Lに対してL=Wの時の")
+print("基準値L,Wに対して")
 print("BetaP の値を入力してください")
 BetaP=float(input())
 
@@ -125,26 +131,28 @@ print("VoutMax=",VoutMax)
 
 print("=====================================================")
 
+LW=W/L
+
 L1=L
-W1=L1*LW1
+W1=L1*LW1*LW
 
 L2=L
-W2=L2*LW2
+W2=L2*LW2*LW
 
 L3=L
-W3=L3*LW3
+W3=L3*LW3*LW
 
 L4=L
-W4=L4*LW4
+W4=L4*LW4*LW
 
 L5=L
-W5=L5*LW5
+W5=L5*LW5*LW
 
 L6=L
-W6=L6*LW6
+W6=L6*LW6*LW
 
 L7=L
-W7=L7*LW7
+W7=L7*LW7*LW
 
 L8=L
 
