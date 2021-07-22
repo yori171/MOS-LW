@@ -135,41 +135,48 @@ LW=W/L
 
 L1=L
 W1=L1*LW1*LW
+W1=round(W1,2)
 
 L2=L
 W2=L2*LW2*LW
+W2=round(W2,2)
 
 L3=L
 W3=L3*LW3*LW
+W3=round(W3,2)
 
 L4=L
 W4=L4*LW4*LW
+W4=round(W4,2)
 
 L5=L
 W5=L5*LW5*LW
+W5=round(W5,2)
 
 L6=L
 W6=L6*LW6*LW
+W6=round(W6,2)
 
 L7=L
 W7=L7*LW7*LW
+W7=round(W7,2)
 
 L8=L
 
 print("MOS1のL＝",L1,"[um]")
-print("MOS1のW＝",W1,"[um]")
-print("MOS2のL＝",L2,"[um]")
-print("MOS2のW＝",W2,"[um]")
-print("MOS3のL＝",L3,"[um]")
-print("MOS3のW＝",W3,"[um]")
-print("MOS4のL＝",L4,"[um]")
-print("MOS4のW＝",W4,"[um]")
-print("MOS5のL＝",L5,"[um]")
-print("MOS5のW＝",W5,"[um]")
-print("MOS6のL＝",L6,"[um]")
-print("MOS6のW＝",W6,"[um]")
-print("MOS7のL＝",L7,"[um]")
-print("MOS7のW＝",W7,"[um]")
+print("MOS1のL＝",W1,"[um]")
+print("MOS1のL＝",L2,"[um]")
+print("MOS1のL＝",W2,"[um]")
+print("MOS1のL＝",L3,"[um]")
+print("MOS1のL＝",W3,"[um]")
+print("MOS1のL＝",L4,"[um]")
+print("MOS1のL＝",W4,"[um]")
+print("MOS1のL＝",L5,"[um]")
+print("MOS1のL＝",W5,"[um]")
+print("MOS1のL＝",L6,"[um]")
+print("MOS1のL＝",W6,"[um]")
+print("MOS1のL＝",L7,"[um]")
+print("MOS1のL＝",W7,"[um]")
 
 print("=====================================================")
 
@@ -219,3 +226,5 @@ exit=0
 while exit==0:
     print("終了したい場合は何かキーを押してください。")
     exit = input()
+
+
