@@ -11,4 +11,4 @@
 
 MOScalcNET.py：MOSのLW比を計算しNETリストを生成しアウトプット
 
-MOScalcNETver005.py：MOSのLW比を計算しNETリストを生成しアウトプット　計算が要件を満たすまで何度も行うように変更
+MOScalcNETver005.py：MOSのLW比を計算しNETリストを生成しアウトプット　計算が要件を満たすまで何度も行うように変更　お任せモード等を実装しました。
